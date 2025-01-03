@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONLINE FOOD DELIVERY</title>
+    <link rel="shortcut icon" href="OIP.jpeg" type="image/x-icon">
+       <link rel="stylesheet" href="style.css">
+       <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="navbar">
+        <nav id="site-top-nav" class="navbar-menu navbar-fixed-top">
+            <div class="container">
+                <div class="logo">
+                    <a href="home.html" title="Logo">
+                        <img src="OIP.jpeg" alt="Logo" class="img-responsive">
+                    </a>
+                </div>
+                <div class="menu text-right">
+                    <ul>
+                        <li><a class="hvr-underline-from-center" href="home.html">Home</a></li>
+                        <li><a class="hvr-underline-from-center" href="categories.html">Categories</a></li>
+                        <li><a class="hvr-underline-from-center" href="foods.html">Foods</a></li>
+                        <li><a class="hvr-underline-from-center" href="order.html">Order</a></li>
+                        <li><a class="hvr-underline-from-center" href="contact.html">Contact</a></li>
+                        <li><a class="hvr-underline-from-center" href="login.html">Login</a></li>
+                        <li>
+                             <a id="shopping-cart" class="shopping-cart">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M7 18c-1.104 0-2 .896-2 2s.896 2 2 2c1.104 0 2-.896 2-2s-.896-2-2-2zm10 0c-1.104 0-2 .896-2 2s.896 2 2 2c1.104 0 2-.896 2-2s-.896-2-2-2zm1.618-4H6.382L5.523 7h15.086l-.991 7zm2.382-9H2.618l-.586-2H0v2h2l1.615 13h15.771l2.199-16z"/>
+                            </svg>
+                            <span id="cart-badge" class="badge">0</span>
+                            <div id="cart-content" class="cart-content">
+                                <h3 class="text-center">Shopping Cart</h3>
+                                <table class="cart-table" border="10">
+                                    <tr>
+                                        <th>Food</th>
+                                        <th>Name</th>
+                                        <th>Price</th>
+                                        <th>Qty</th>
+                                        <th>Total</th>
+                                        <th>Action</th>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="briyani.jpg" alt="Food"></td>
+                                        <td>BRIYANI</td>
+                                        <td>$ 8.00</td>
+                                        <td>1</td>
+                                        <td>$ 8.00</td>
+                                        <td><a href="#" class="btn-delete">&times;</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="pizza1.jpeg" alt="Food"></td>
+                                        <td>Sandwich</td>
+                                        <td>$ 8.00</td>
+                                        <td>1</td>
+                                        <td>$ 8.00</td>
+                                        <td><a href="#" class="btn-delete">&times;</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="sandwitch.jpeg" alt="Food"></td>
+                                        <td>Burder</td>
+                                        <td>$ 8.00</td>
+                                        <td>1</td>
+                                        <td>$ 8.00</td>
+                                        <td><a href="#" class="btn-delete">&times;</a></td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="4">Total</th>
+                                        <th>$24.00$</th>
+                                        <th></th>
+                                    </tr>
+                                </table>
+                                <a href="order.html" class="btn-primary">Confirm Order</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="food-search text-center" >
+        <div class="container">
+            <form action="food-search.html">
+                <input type="search" placeholder="Search for food..." required>
+                <input type="submit" value="Search" class="btn-primary">
+            </form>
+        </div>
+    </section>
+
+    <section class="categories">
+        <div class="container">
+            <h2 class="text-center">Explore Foods</h2>
+            <div class="heading-border"></div>
+
+            <div class="grid-3">
+                <a href="category-foods.html">
+                    <div class="float-container">
+                        <img src="briyani.jpg" class="img-responsive" alt="">
+                        <h3 class="float-text text-white">BRIYANI</h3>
+                    </div>
+                </a>
+                <a href="category-foods.html">
+                    <div class="float-container">
+                        <img src="B.jpeg" class="img-responsive" alt="">
+                        <h3 class="float-text text-white">BURGER</h3>
+                    </div>
+                </a>
+                <a href="catagory-food.html">
+                    <div class="float-container">
+                        <img src="sandwitch.jpeg" class="img-responsive" alt="">
+                        <h3 class="float-text text-white">Sandwich</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="food-menu">
+        <div class="container">
+            <h2 class="text-center">Food Menu</h2>
+            <div class="heading-border"></div>
+            <div class="grid-2">
+                <div class="food-menu-box">
+                    <form action="">
+                        <div class="food-menu-img">
+                            <img src="pizza1.jpeg" class="img-responsive img-curve">
+                        </div>
+                        <div class="food-menu-desc">
+                            <h4>Pizza</h4>
+                            <p class="food-price">$8.00</p>
+                            <p class="food-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus excepturi porro.</p>
+                            <input type="number" value="1" min="1">
+                            <input type="submit" class="btn-primary add-to-cart-btn" value="Add To Cart">
+                            <input type="submit" class="btn-primary " value="buy">
+                        </div>
+                    </form>
+                </div>
+                <div class="food-menu-box">
+                    <form action="">
+                        <div class="food-menu-img">
+                            <img src="sandwitch.jpeg" class="img-responsive img-curve">
+                        </div>
+                        <div class="food-menu-desc">
+                            <h4>Sandwich</h4>
+                            <p class="food-price">$7.00</p>
+                            <p class="food-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus excepturi porro.</p>
+                            <input type="number" value="1" min="1">
+                            <input type="submit" class="btn-primary add-to-cart-btn" value="Add To Cart">
+                            <input type="submit" class="btn-primary " value="buy">
+                        </div>
+                    </form>
+                </div>
+                <div class="food-menu-box">
+                    <form action="">
+                        <div class="food-menu-img">
+                            <img src="BURGER.jpeg" alt="" class="img-responsive img-curve">
+                        </div>
+                        <div class="food-menu-desc">
+                            <h4>Burger</h4>
+                            <p class="food-price">$5.00</p>
+                            <p class="food-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus excepturi porro.</p>
+                            <input type="number" value="1" min="1">
+                            <input type="submit" class="btn-primary add-to-cart-btn" value="Add To Cart">
+                            <input type="submit" class="btn-primary " value="buy">
+                        </div>
+                    </form>
+                </div>
+                <div class="food-menu-box">
+                    <form action="">
+                        <div class="food-menu-img">
+                            <img src="FRIED.jpeg" alt="" class="img-responsive img-curve">
+                        </div>
+                        <div class="food-menu-desc">
+                            <h4>FRIED CHIKEN</h4>
+                            <p class="food-price">$10.00</p>
+                            <p class="food-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus excepturi porro.</p>
+                            <input type="number" value="1" min="1">
+                            <input type="submit" class="btn-primary add-to-cart-btn" value="Add To Cart">
+                            <input type="submit" class="btn-primary " value="buy">
+                        </div>
+                    </form>
+                </div>
+                <div class="food-menu-box">
+                    <form action="">
+                        <div class="food-menu-img">
+                            <img src="briyani.jpg" alt="" class="img-responsive img-curve">
+                        </div>
+                        <div class="food-menu-desc">
+                            <h4>BRIYANI</h4>
+                            <p class="food-price">$5.00</p>
+                            <p class="food-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus excepturi porro.</p>
+                            <input type="number" value="1" min="1">
+                            <input type="submit" class="btn-primary add-to-cart-btn" value="Add To Cart">
+                            <input type="submit" class="btn-primary " value="buy">
+                        </div>
+                    </form>
+                </div>
+                <div class="food-menu-box">
+                    <form action="">
+                        <div class="food-menu-img">
+                            <img src="NOODLE.jpeg" alt="" class="img-responsive img-curve">
+                        </div>
+                        <div class="food-menu-desc">
+                            <h4>NOODLES</h4>
+                            <p class="food-price">$6.00</p>
+                            <p class="food-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus excepturi porro.</p>
+                            <input type="number" value="1" min="1">
+                            <input type="submit" class="btn-primary add-to-cart-btn" value="Add To Cart">
+                            <input type="submit" class="btn-primary " value="buy">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <p class="text-center">
+            <a href="foods.html" class="btn-primary">See All Foods</a>
+        </p>
+    </section>
+    <section class="footer">
+        <div class="container">
+            <div class="grid-3">
+
+                <div class="texr-center">
+                    <h3>Site Map</h3><br>
+                    <div class="site-links">
+                        <a href="categories.html">Categories</a>
+                        <a href="foods.html">Foods</a>
+                        <a href="order.html">Order</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="login.html">Login</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <section class="copyright">
+        <div class="container text-center">
+            <p>All rights reserved. Design By <a href="#">DINESH</p>
+        </div>
+        <a id="back-to-top" class="btn-primary">
+            <i class="fa fa-angle-double-up"></i>
+        </a>
+    </section>
+    
+</body>
+</html>
